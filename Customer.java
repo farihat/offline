@@ -16,6 +16,6 @@ public class Customer {
     public String getEmail(){return email;}
     public void setGender(char gender){this.gender= gender;}
     public char getGender(){return gender;}
-    public void print(){System.out.println(getName() + " (" + getGender() + ") at " + getEmail() + "\n");}
+    public void print(){System.out.println(getName() + " (" + getGender() + ") at " + getEmail() );}
 }
 

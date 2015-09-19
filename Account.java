@@ -29,11 +29,11 @@ public class Account {
         balance-=d;
         else
         {
-        System.out.println("Amount withdrawn exceeds the current balance!\n");
+        System.out.println("Amount withdrawn exceeds the current balance!");
         }
    }
    public void print(){
-        System.out.println("Customer: "+getCustomerName()+" Branch: "+branch+" A/C no: "+accountNumber+" Balance: "+balance+"\n");
+        System.out.println("Customer: "+getCustomerName()+" Branch: "+branch+" A/C no: "+accountNumber+" Balance: "+balance);
    }
    public Customer getCustomer(){return customer;}
 }

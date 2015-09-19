@@ -2,7 +2,7 @@
 public class TestAccount{
 public static void main(String args[]) {
     Customer john = new Customer("John Doe", "john@doe.com" , 'm');
-	System.out.println( john.getName() + " (" + john.getGender() + ") at " + john.getEmail() + "\n");
+	System.out.println( john.getName() + " (" + john.getGender() + ") at " + john.getEmail() );
 
 	Customer mary = new Customer("Mary Jane");
 	mary.setGender('f');
@@ -12,11 +12,11 @@ public static void main(String args[]) {
 	Account a1 = new Account(john, 8111, 99.99);
     a1.setBranch("b1");
     System.out.println("Customer: " + a1.getCustomerName() +" Branch: " + a1.getBranch() + " A/C no: " + a1.getAccountNumber()
-            + " Balance: " + a1.getBalance() + "\n");
+            + " Balance: " + a1.getBalance() );
     a1.credit(20);
     a1.debit(10);
     System.out.println("Customer: " + a1.getCustomerName() +" Branch: " + a1.getBranch() + " A/C no: " + a1.getAccountNumber()
-            + " Balance: " + a1.getBalance() + "\n");
+            + " Balance: " + a1.getBalance() );
 
     Account a2 = new Account(mary, 8222, "main");
     a2.print();
