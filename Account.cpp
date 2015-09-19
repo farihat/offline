@@ -5,7 +5,7 @@ public class Account {
    private int accountNumber;
    private double balance;
    private String branch;
-public:
+
    public Account(Customer customer, int accountNumber, String branch){
         this.customer=customer;
         this.accountNumber=accountNumber;
@@ -29,11 +29,12 @@ public:
         balance-=d;
         else
         {
-        System.out.println("Amount withdrawn exceeds the current balance!"+endl);
+        System.out.println("Amount withdrawn exceeds the current balance!\n");
         }
    }
    public void print(){
-        System.out.println("Customer: "+getCustomerName()+" Branch: "+branch+" A/C no: "+accountNumber+" Balance: "+balance+endl);
+        System.out.println("Customer: "+getCustomerName()+" Branch: "+branch+" A/C no: "+accountNumber+" Balance: "+balance+"\n");
    }
    public Customer getCustomer(){return customer;}
 }
+
